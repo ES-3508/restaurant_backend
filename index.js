@@ -9,7 +9,7 @@ require("dotenv").config();
 require("dotenv").config({ path: path.join(__dirname, ".env") });
 
 // Import Routes
-const foodRouter = require('./routes/foodRoute.js');
+// const foodRouter = require('./routes/foodRoute.js');
 const userRouter = require('./routes/userRoute.js');
 const cartRouter = require('./routes/cartRoute.js');
 const orderRouter = require('./routes/orderRoute.js');
@@ -66,7 +66,7 @@ app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
 
-app.use("/api/food", foodRouter);
+// app.use("/api/food", foodRouter);
 app.use("/api/user", userRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
