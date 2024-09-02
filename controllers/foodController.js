@@ -1,7 +1,7 @@
 import foodModel from "../models/foodModel.js";
 import fs from 'fs'
 // const FileService = require("../services/FileService.js");
-import FileService from '../services/FileService.js'
+import {FileService} from '../services/FileService.js'
 
 //add food item
 
