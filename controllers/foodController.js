@@ -1,6 +1,7 @@
 import foodModel from "../models/foodModel.js";
 import fs from 'fs'
-const FileService = require("../services/FileService.js");
+// const FileService = require("../services/FileService.js");
+import FileService from '../services/FileService.js'
 
 //add food item
 
@@ -9,7 +10,7 @@ const addFood =async (req,res)=>{
   const file = req.file;
 
   if (file) {
-    const uploadResult = await FileService.uploadFile(request, response);
+    const uploadResult = await FileService.uploadFile(req, res);
     console.log("uploadResult", uploadResult);
 
     if (uploadResult.error) {

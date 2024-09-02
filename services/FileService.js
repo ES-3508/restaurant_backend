@@ -1,6 +1,7 @@
-const cloudinary = require("cloudinary").v2;
-const { validationResult } = require("express-validator");
-const { resolve } = require("path");
+import { v2 as cloudinary } from "cloudinary";
+
+// const { validationResult } = require("express-validator");
+// const { resolve } = require("path");
 // const leadModel = require("../../lead/models/leadModel");
 // const projectModel = require("../../project/models/projectModel");
 const FileService = module.exports;
